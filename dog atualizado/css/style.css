@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 /* ======= VARIÁVEIS ======= */
 :root {
     --small-font-size: 0.9rem;
@@ -31,12 +29,6 @@ a {
 li {
     list-style: none;
 }
-
-/* ======= SCROLL DA PÁGINA =======
-::-webkit-scrollbar {
-    display: none;
-}
-*/
 
 /* ======= HEADER (NAVBAR) ======= */
 header {
@@ -75,9 +67,9 @@ header {
 .home {
     position: relative;
     width: 100%;
-    height: 100vh; /* Faz com que a seção ocupe toda a altura da tela */
-    overflow: hidden; /* Para garantir que não haja barras de rolagem */
-    margin-top: -120px;
+    height: 100vh; 
+    overflow: hidden; 
+    margin-top: -80px;
 }
 
 .home-container {
@@ -88,11 +80,31 @@ header {
     align-items: center;
     background-image: url(../img/paisagem.png);
     background-repeat: no-repeat;
-    margin-top: -150px;
+    margin-top: 10px;
+}
+.ng-container{
+    margin-top: -1230px;
+    margin-left: -700px ;
+    z-index: 1;
+}
+.ngg-container{
+    margin-top: -1550px;
+    margin-left: 900px ;
+    z-index: 2;
+}
+.np-container{
+    margin-top: -1400px;
+    margin-left: -200px;
+}
+.npp-container{
+    margin-top: -1500px;
+    margin-left: 300px;
+
+
 }
 
 .paisagem-img {
-    width: 1100px; /* Ajusta a largura de forma a manter a proporção */
+    width: 1100px; 
     height: 618px;
 }
 
@@ -100,7 +112,7 @@ header {
     width: 437.01px;
     height: 505.54px;
 }
-
+/* ======= SOBRE ======= */
 .btn {
     color: #7E57C2;
     font-weight: 500;
@@ -117,30 +129,9 @@ header {
     align-items: center;
     background-repeat: no-repeat;
     background-size: 100%;
+    z-index: 3;
+    position: relative; 
 }
-
-/* ======= DESCRIÇÃO ======= */
-.description h3,
-.description p,
-.description ul {
-    color: black;
-}
-
-.description h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.description p {
-    margin-bottom: 20px;
-}
-
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-/* ======= ESTILOS PARA A SEÇÃO SOBRE ======= */
 .sobre-container {
     text-align: left;
     padding: 20px;
@@ -148,11 +139,12 @@ ul {
     align-items: center;
     justify-content: space-between;
     background-color: #ffffff;
-    border-radius: 15px; /* Bordas arredondadas */
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 1100px;
     height: 381px;
     margin-top: -900px;
+    position: relative; 
 }
 
 .texto-sobre {
@@ -166,31 +158,49 @@ ul {
 }
 
 .img-sobre {
-    width: 100%;
+    width: 400px;
     height: auto;
+    margin-left: -100px;
+}
+
+.gato-sobre {
+    width: 75px;
+    height: 75px; 
+    margin-left: -1050px; 
+    margin-top: 220px;   
+    transform: rotate(180deg);
+    z-index: 1; 
+    position: relative; 
+}
+
+.sobre-container h2 {
+    color: #7E57C2; 
 }
 
 /* ======= ADOTAR CONTAINER ======= */
 .adotar-container {
     display: inline-block;
     padding: 10px 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #FFFFFF; 
+    border-radius: 25px; 
     z-index: 2;
     position: relative;
-    border: 1px solid #000000;
+    width: 261px;
+    height: 52px;
+    margin-top: -10px;
+    border: 1px solid transparent; 
+    background-clip: padding-box;
+    box-shadow: 
+        0 -2px 0 0 #000000 inset,
+        0 2px 0 0 #ffffff inset; 
 }
-
 .adotar-container a {
     color: #000000;
-    font-weight: 500;
-    font-size: var(--normal-font-size);
+    font-weight: bold; 
+    font-size: calc(var(--normal-font-size) - 0.1rem);
     z-index: 1;
 }
-.sobre-container h2 {
-    color: #7E57C2; 
-}
+
 /* ======= ESTILOS DO LOGO ======= */
 .logo-container {
     display: inline-block;
@@ -235,6 +245,7 @@ header,
 section {
     position: relative;
 }
+
 /* ======= CALENDARIO CONTEINER ======= */
 .calendario-container {
     background-color: #ffffff; 
@@ -244,7 +255,7 @@ section {
     max-width: 1100px; 
     margin-top: -1100px;
     margin-left: -530px;
-    width: auto; 
+    width:632px; 
     display: inline-block; 
     height: auto; 
 }
@@ -262,22 +273,42 @@ section {
 
 /* ======= BAIXAR CONTEINER ======= */
 .baixar-container {
-    background-color: #ffffff; 
-    border-radius: 15px; 
-    padding: 20px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    width: auto;  
-    display: inline-block; 
-    height: auto; 
-    margin-top: -1400px; 
-    margin-left: -550px; 
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width:632px;
+    display: inline-block;
+    height: auto;
+    margin-top: -1300px; 
+    margin-left: -465px;
     letter-spacing: normal;
-   
+    color: #7E57C2;
+    margin-top: -1500px;
+    margin-left: -530px;
+}
+
+.botao{
+    color: #ffffff;
+    font-weight: 500;
+    padding: 12px 30px;
+    border-radius: 10px;
+    border: 1px solid #7E57C2;
+    background: #7E57C2;
+    background-image: url(../img/fundoBNT.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.img-container {
+    margin-bottom: -60px;
+    margin-left: 400px;
 }
 
 .baixar-container h2,
 .baixar-container p {
-    letter-spacing: normal; /* Ajusta o espaçamento entre as letras para normal */
+    letter-spacing: normal; 
 }
 
 .baixar-container h2 {
@@ -291,35 +322,102 @@ section {
 }
 
 /* ======= CADASTRE CONTEINER ======= */
+
+
 .cadastre-container {
     background-color: #ffffff; 
     border-radius: 15px; 
-    padding: 20px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    width: 300px;  /* Definindo uma largura fixa para o contêiner vertical */
-    height: 500px; /* Definindo uma altura fixa para o contêiner vertical */
-   margin: 0;
-   padding: 0;
+    width: 448px;  
+    height: 700px;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: -3450px;
-    margin-left: 1000px;
+    align-items: flex-start; 
+    justify-content: flex-start; /* Alterado para flex-start para permitir espaço para a imagem */
+    text-align: left; 
+    margin-top: -3500px; /* Ajuste conforme necessário */
+    margin-left: 650px;
+}
+
+.escada-img {
+    width: 408px;
+    height: auto; /* Mantém a proporção da imagem */
+    margin-top: 250px;
+    margin-left: 30px;
 }
 
 .cadastre-container h2 {
     color: #7E57C2; 
     margin-bottom: 20px;
+    margin-top: -px; /* Adicionado para espaçar o título do topo */
 }
 
 .cadastre-container p {
-    color: #333333; 
-    margin-bottom: 20px;
+    margin-top: 10px; /* Ajuste do espaço entre os parágrafos */
+    margin-bottom: 20px; 
 }
-.cadastre-container {
-    text-align:left;
+
+/* ======= PET CONTEINER ======= */
+.pet-container {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 1100px;
+    height: 381px;
+    margin-top: -4200px;
+  
+}
+
+.bt-container {
+    margin-top: 10px; 
+    margin-left: 0; 
+    display: flex;
+    justify-content: center; 
+    width: 100%;   
+}
+.bt{
+    color: #7E57C2;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    border-radius: 10px;
+    border: 1px solid #7E57C2;
+    background: #7E57C2;
+    color: #ffffff;
+    background-image: url(../img/fundoBNT.png); 
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+ 
+}
+
+.img-pet {
+    margin-top: 150px; 
+    margin-bottom: 10px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.palanta-container{
+    margin-top: -200px;
+    margin-left: 970px;
+ 
+}
+.palant-container{
+    margin-top: -250px;
+    margin-left: -1000px;
+       
 }
 
 
