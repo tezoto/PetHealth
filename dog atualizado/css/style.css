@@ -11,7 +11,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+    
 body {
     background-color: rgba(255, 224, 187, 1);
 }
@@ -420,4 +420,40 @@ section {
        
 }
 
+
+@keyframes move-clouds {
+    0% {
+        transform: translateX(-100px);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(-100px);
+    }
+}
+
+.ng-container img,
+.np-container img,
+.ngg-container img,
+.npp-container img {
+    animation: move-clouds 30s linear infinite; 
+    position: relative; 
+}
+
+.ng-container img {
+    animation-delay: 0s; 
+}
+
+.np-container img {
+    animation-delay: 0s; 
+}
+
+.ngg-container img {
+    animation-delay: 0s; 
+}
+
+.npp-container img {
+    animation-delay: 0s; 
+}
 
