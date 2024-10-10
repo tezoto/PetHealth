@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dela+Gothic+One&family=Lobster&display=swap');
+/* ======= VARIÁVEIS ======= */
+:root {
+    --small-font-size: 0.9rem;
+    --normal-font-size: 1rem;
+}
+
+/* ======= ESTILOS GERAIS ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+    
+body {
+    background-color: rgba(255, 224, 187, 1);
+}
+
+section {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* ======= HEADER (NAVBAR) ======= */
+header {
+    width: 100%;
+    position: relative;
+}
+
+.nav-bar {
+    height: calc(4rem + 1rem);
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.nav-bar .logo {
+    font-size: 1.3rem;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.nav-items a {
+    color: #000000;
+    font-size: 10px; 
+    font-weight: 500;
+    margin-right: 40px;
+}
+
+.nav-items a:hover {
+    color: rgb(0, 0, 0);
+}
+
+/* ======= HOME (SECTION) ======= */
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden; 
+    margin-top: -80px;
+}
+
+.home-container {
+    width: 1100px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/paisagem.png);
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+.ng-container{
+    margin-top: -1230px;
+    margin-left: -700px ;
+    z-index: 1;
+}
+.ngg-container{
+    margin-top: -1550px;
+    margin-left: 900px ;
+    z-index: 2;
+}
+.np-container{
+    margin-top: -1400px;
+    margin-left: -200px;
+}
+.npp-container{
+    margin-top: -1500px;
+    margin-left: 300px;
+
+
+}
+
+.paisagem-img {
+    width: 1100px; 
+    height: 618px;
+}
+
+.frame-img {
+    width: 437.01px;
+    height: 505.54px;
+}
+/* ======= SOBRE ======= */
+.btn {
+    color: #7E57C2;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    border-radius: 10px;
+    border: 1px solid #7E57C2;
+    background: #7E57C2;
+    color: #ffffff;
+    background-image: url(../img/fundoBNT.png); 
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 3;
+    position: relative; 
+}
+.sobre-container {
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 1100px;
+    height: 381px;
+    margin-top: -900px;
+    position: relative; 
+}
+
+.texto-sobre {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.imagem-sobre {
+    flex: 1;
+    max-width: 30%;
+}
+
+.img-sobre {
+    width: 400px;
+    height: auto;
+    margin-left: -100px;
+}
+
+.gato-sobre {
+    width: 120px;
+    height: 120px; 
+    margin-left: -1050px; 
+    margin-top: 220px;   
+    transform: rotate(180deg);
+    z-index: 1; 
+    position: relative; 
+}
+
+.sobre-container h2 {
+    color: #7E57C2; 
+}
+
+/* ======= ADOTAR CONTAINER ======= */
+.adotar-container {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFFFFF; 
+    border-radius: 25px; 
+    z-index: 2;
+    position: relative;
+    width: 261px;
+    height: 52px;
+    margin-top: -10px;
+    border: 1px solid transparent; 
+    background-clip: padding-box;
+    box-shadow: 
+        0 -2px 0 0 #000000 inset,
+        0 2px 0 0 #ffffff inset; 
+}
+.adotar-container a {
+    color: #000000;
+    font-weight: bold; 
+    font-size: calc(var(--normal-font-size) - 0.1rem);
+    z-index: 1;
+}
+
+/* ======= ESTILOS DO LOGO ======= */
+.logo-container {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.logo-pet,
+.logo-health {
+    display: block;
+}
+
+.logo-pet {
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(255, 136, 0);
+}
+
+.logo-health {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* ======= ESTILOS DIVERSOS ======= */
+.diferenca {
+    color: rgba(247, 147, 30, 1);
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 136%;
+}
+
+header,
+section {
+    position: relative;
+}
+
+/* ======= CALENDARIO CONTEINER ======= */
+.calendario-container {
+    background-color: #ffffff; 
+    border-radius: 15px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    max-width: 1100px; 
+    margin-top: -1040px;
+    margin-left: -470px;
+    width:632px; 
+    display: inline-block; 
+    height: 300px; 
+}
+
+.img-calendario {
+    width: 250px;
+    height: 220px;
+    margin-top: -180px;
+    margin-left: 350px;
+}
+
+
+.calendario-container h2 {
+    color: #7E57C2; 
+    margin-top: 50px; 
+}
+
+/* ======= BAIXAR CONTEINER ======= */
+.baixar-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width:632px;
+    display: inline-block;
+    height: auto;
+    margin-top: -1300px; 
+    margin-left: -465px;
+    letter-spacing: normal;
+    color: #7E57C2;
+    margin-top: -1250px;
+    margin-left: -470px;
+}
+
+.botao{
+    color: #ffffff;
+    font-weight: 500;
+    padding: 12px 30px;
+    border-radius: 10px;
+    border: 1px solid #7E57C2;
+    background: #7E57C2;
+    background-image: url(../img/fundoBNT.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.img-container {
+    margin-bottom: -65px;
+    margin-left: 400px;
+}
+img-baixar{
+margin-top: -10px;
+
+}
+
+.baixar-container h2,
+.baixar-container p {
+    letter-spacing: normal; 
+}
+
+.baixar-container h2 {
+    color: #7E57C2; 
+    margin-bottom: 20px;
+}
+
+.baixar-container p {
+    color: #333333; 
+    margin-bottom: 20px;
+}
+
+/* ======= CADASTRE CONTEINER ======= */
+
+
+.cadastre-container {
+    background-color: #ffffff; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    width: 448px;  
+    height: 700px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: flex-start;
+    text-align: left; 
+    margin-top: -3500px; 
+    margin-left: 650px;
+}
+
+.escada-img {
+    width: 408px;
+    height: auto; 
+    margin-top: 250px;
+    margin-left: 30px;
+}
+
+.cadastre-container h2 {
+    color: #7E57C2; 
+    margin-bottom: 20px;
+    margin-top: -px; 
+}
+
+.cadastre-container p {
+    margin-top: 10px;
+    margin-bottom: 20px; 
+}
+
+/* ======= PET CONTEINER ======= */
+.pet-container {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 1100px;
+    height: 381px;
+    margin-top: -4300px;
+  
+}
+
+.bt-container {
+    margin-top: 10px; 
+    margin-left: 0; 
+    display: flex;
+    justify-content: center; 
+    width: 100%;   
+}
+.bt{
+    color: #7E57C2;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    border-radius: 10px;
+    border: 1px solid #7E57C2;
+    background: #7E57C2;
+    color: #ffffff;
+    background-image: url(../img/fundoBNT.png); 
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+ 
+}
+
+.img-pet {
+    margin-top: 150px; 
+    margin-bottom: 10px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.palanta-container{
+    margin-top: -200px;
+    margin-left: 970px;
+    
+}
+.palant-container{
+    margin-top: -250px;
+    margin-left: -1000px;
+    
+       
+}
+
+
+@keyframes move-clouds {
+    0% {
+        transform: translateX(-100px);
+    }
+    50% {
+        transform: translateX(9px);
+    }
+    100% {
+        transform: translateX(-100px);
+    }
+}
+
+.ng-container img,
+.np-container img,
+.ngg-container img,
+.npp-container img {
+    animation: move-clouds 10s linear infinite; 
+    position: relative; 
+}
+
+.ng-container img {
+    animation-delay: 0s; 
+}
+
+.np-container img {
+    animation-delay: 0s; 
+}
+
+.ngg-container img {
+    animation-delay: 0s; 
+}
+
+.npp-container img {
+    animation-delay: 0s; 
+}
+
+h1,h2,h3,a{
+    font-family: "Dela Gothic One",sans-serif;
+
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+}
